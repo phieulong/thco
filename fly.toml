@@ -1,16 +1,16 @@
-# fly.toml app configuration file generated for thco on 2024-09-15T15:09:46+07:00
+# fly.toml app configuration file generated for thco on 2024-09-28T11:57:55+07:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'thco'
-primary_region = 'sin'
+primary_region = 'hkg'
 console_command = 'php /var/www/html/artisan tinker'
 
 [build]
   [build.args]
     NODE_VERSION = '18'
-    PHP_VERSION = '8.3'
+    PHP_VERSION = '8.2'
 
 [env]
   APP_ENV = 'production'
@@ -23,12 +23,12 @@ console_command = 'php /var/www/html/artisan tinker'
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
+  memory = '512mb'
   cpu_kind = 'shared'
   cpus = 1
