@@ -4,22 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    {{--    --}}{{--    <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">--}}
-    {{--    --}}{{--    <head>--}}
-    {{--    --}}{{--    </head>--}}
-
+    {{--    <script src="https://cdn.tailwindcss.com"></script>--}}
+    {{--    --}}{{--    --}}{{----}}{{--    <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">--}}
+    {{--    --}}{{--    --}}{{----}}{{--    <head>--}}
+    {{--    --}}{{--    --}}{{----}}{{--    </head>--}}
+    @vite('resources/css/app.css')
     {{--    @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
 </head>
 <body class="h-full">
-<!--
-  This example requires updating your template:
-
-  ```
-  <html class="h-full bg-gray-100">
-  <body class="h-full">
-  ```
--->
 <div class="min-h-full">
     <nav class="bg-gray-800">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

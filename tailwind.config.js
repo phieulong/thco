@@ -1,16 +1,11 @@
-import generated from "@tailwindcss/forms";
-
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        './resources/**/*.blade.php',
-        './resources/**/*.js',
-        './resources/**/*.vue',
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
     ],
     theme: {
         extend: {},
     },
-    plugins: [
-        generated,
-    ],
-};
+    plugins: [],
+}
