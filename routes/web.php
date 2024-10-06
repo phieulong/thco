@@ -13,7 +13,12 @@ Route::get('/', function () {
 
 
 Route::get('/products', function () {
-    return view('/products/product_listing');
+    return view('/product_listing');
+});
+
+
+Route::get('/products/{id}', function ($id) {
+    return view('/product');
 });
 
 
@@ -25,3 +30,7 @@ Route::get('/about', function () {
     return view('about');
 });
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
